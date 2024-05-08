@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Churn Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="CreditScore">Credit Score:</label>
+            <input type="text" id="CreditScore" name="CreditScore" required><br>
+
+            <label for="Geography">Geography:</label>
+            <input type="text" id="Geography" name="Geography" required><br>
+            <!-- <select id="Geography" name="Geography" required>
+                <option value="0">France</option>
+                <option value="1">Spain</option>
+                <option value="2">Germany</option>
+            </select><br> -->
+
+            <label for="Gender">Gender:</label>
+            <input type="text" id="Gender" name="Gender" required><br>
+            
+            <!-- <select id="Gender" name="Gender" required>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select><br> -->
+
+            <label for="Age">Age:</label>
+            <input type="text" id="Age" name="Age" required><br>
+
+            <label for="Tenure">Tenure:</label>
+            <input type="text" id="Tenure" name="Tenure" required><br>
+
+            <label for="Balance">Balance:</label>
+            <input type="text" id="Balance" name="Balance" required><br>
+
+            <label for="NumOfProducts">Number of Products:</label>
+            <input type="text" id="NumOfProducts" name="NumOfProducts" required><br>
+
+            <label for="HasCrCard">Has Credit Card:</label>
+            <input type="text" id="HasCrCard" name="HasCrCard" required><br>
+        
+            <!-- <select id="HasCrCard" name="HasCrCard" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br> -->
+
+            <label for="IsActiveMember">Is Active Member:</label>
+            <input type="text" id="IsActiveMember" name="IsActiveMember" required><br>
+            <!-- <select id="IsActiveMember" name="IsActiveMember" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br> -->
+
+            <label for="EstimatedSalary">Estimated Salary:</label>
+            <input type="text" id="EstimatedSalary" name="EstimatedSalary" required><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

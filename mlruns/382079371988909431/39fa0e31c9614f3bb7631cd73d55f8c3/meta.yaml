@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/382079371988909431/39fa0e31c9614f3bb7631cd73d55f8c3/artifacts
+deleted_time: null
+end_time: null
+entry_point_name: ''
+experiment_id: '382079371988909431'
+lifecycle_stage: active
+run_id: 39fa0e31c9614f3bb7631cd73d55f8c3
+run_name: run_1
+run_uuid: 39fa0e31c9614f3bb7631cd73d55f8c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714732556759
+status: 1
+tags: []
+user_id: viswanath.c
