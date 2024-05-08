@@ -17,4 +17,4 @@ ENV FLASK_APP=app.py  # Replace with your main Flask file name
 EXPOSE 5000
 
 # Run the Flask app using gunicorn (recommended for production)
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:application"]
+CMD ["python","app.py"]
