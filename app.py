@@ -1,15 +1,13 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import pickle
+from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
 
 # Load label encoders and the best model
-with open('label_encoders.pkl', 'rb') as f:
-    label_encoders = pickle.load(f)
-
 with open('best_model.pkl', 'rb') as f:
-    best_model = pickle.load(f)
+    best_model, label_encoders = pickle.load(f)
 
 @app.route('/')
 def home():
@@ -57,3 +55,4 @@ def predict():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=5000,debug=True)
+
