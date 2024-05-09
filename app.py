@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import pickle
-from sklearn.preprocessing import LabelEncoder
+
 
 app = Flask(__name__)
 
